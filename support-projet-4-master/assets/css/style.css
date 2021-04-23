@@ -9,6 +9,7 @@ body{
     color: rgb(82, 82, 97) !important;
     background-color: rgb(252, 252, 252) ;
     font-family: 'Rambla', sans-serif;
+    
 }
 h2, h3{
     font-family: 'AudioWide', sans-serif ;
@@ -111,7 +112,7 @@ header .button:hover a {
 /* *******************************************************LANGAGES********************************** */
 #langages{
     padding: 100px 100px 80px 50px;
-    margin: 20px 0 0 6%;
+    margin: 20px 0 0 1%;
     width:  47%;
     max-width: 640px;
 background: linear-gradient(181deg,#ffffff 0%, #6fa1eb 40%, rgba(172,139,255,0.21) 80%);
@@ -123,4 +124,125 @@ clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 #langage .bar{
     padding: 10px 0 4px 0;
     letter-spacing: 0.1em;
+}
+
+/* ********************************************************FORMATION******************************************** */
+
+#formation{
+
+    position : relative;
+    top: -440px;
+    float: right;
+    padding: 110px 0 80px 30px;
+    width: 45%;
+    max-width: 700px;
+    background: linear-gradient(19deg, rgba(0,180,219,0.69)0%,#0083b0 80% );
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+}
+
+#campus{
+    padding-top: 20px;
+}
+
+#formation h4{
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding-bottom: 10px;
+    color: #005978;
+    text-shadow: -1px -1px 1px #3584d5;
+}
+
+
+/* *****************************************PARCOURS************************************
+/*  */
+#parcours{
+    max-width: 800px;
+    margin: -500px auto 30px 650px;
+    padding:  40px 30px 100px 30px;
+    background: url(/support-projet-4-master/media/parcours.jpg) no-repeat fixed 50% 50;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow:  -1px -1px 8px #283655;
+}
+
+#parcours h3{
+    font-size: 2.5em;
+    padding-bottom:  30px;
+}
+
+#parcours h4{
+    font-size: 1.6em;
+    color: #ff4e50;
+    margin-left: 20px;
+}
+
+#parcours h6{
+    font-style: italic;
+    color: #edca21;
+    margin-left: 20px;
+}
+
+#parcours p {
+    line-height: 1.9em;;
+}
+
+.timeline{
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #f9d423, #ff4e50);
+    border-image-slice: 1;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+}
+
+.timeline:nth-child(1):after{
+    content: '▲';
+    color: #ff4e50;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-sizing: content-box !important;
+}
+/* nth-child pour séléctionner l'enfant de class qui nous intéresse  */
+.timeline:nth-child(1){
+    border-bottom: 3px solid;
+    border-top: none;
+    width: 80%;
+}
+
+.timeline:nth-child(2){
+    border-top: none;
+}
+/* odd concerne tout les enfants "impaire" de la classe */
+.timeline:nth-child(odd){
+    border-right: 3px solid;
+    padding-left: 0;
+}
+/* even concerne tout les enfants "pair" de la classe */
+
+.timeline:nth-child(even){
+    border-left: 3px solid;
+    padding-right: 0;
+}
+
+/* ***********************************OTHER SKILLS*********************************** */
+
+#other-skills{
+    margin-top: 80px;
+    padding: 50px, 100px, 200px, 00px;
+    width: 100%;
+    background-color: #3584d5;
+    clip-path: polygon(5 11%, 100% 0%, 100% 100%, 0 84%);
+}
+
+#other-skills h3{
+    text-shadow : -1px 1px 0px;
+}
+
+.cloud{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 2em;
+    text-transform: uppercase;
 }
